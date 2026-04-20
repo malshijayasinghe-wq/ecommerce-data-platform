@@ -1,6 +1,14 @@
 import pandas as pd
+import logging
 
-print("Starting data pipeline...")
+# Configure logging
+logging.basicConfig(
+    filename="pipeline.log",
+    level=logging.INFO,
+    format="%(asctime)s — %(message)s"
+)
+
+logging.info("Pipeline started")
 
 # Step 1 — Load dataset
 sales = pd.read_csv(
@@ -8,28 +16,29 @@ sales = pd.read_csv(
     encoding="latin1"
 )
 
-print("Dataset loaded.")
+logging.info("Dataset loaded")
 
 # Step 2 — Clean data
 
-# Remove missing CustomerID
 sales = sales.dropna(subset=["CustomerID"])
+logging.info("Removed missing CustomerID")
 
-# Remove negative Quantity
 sales = sales[sales["Quantity"] > 0]
+logging.info("Removed negative quantities")
 
-# Convert InvoiceDate to datetime
 sales["InvoiceDate"] = pd.to_datetime(sales["InvoiceDate"])
+logging.info("Converted InvoiceDate to datetime")
 
-# Create Revenue column
 sales["Revenue"] = sales["Quantity"] * sales["UnitPrice"]
-
-print("Data cleaned.")
+logging.info("Revenue column created")
 
 # Step 3 — Save cleaned dataset
+
 sales.to_csv(
     "G:/ecommerce-data-platform/data/cleaned_data.csv",
     index=False
 )
 
-print("Pipeline finished successfully.")
+logging.info("Cleaned data saved")
+
+logging.info("Pipeline finished successfully")

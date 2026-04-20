@@ -1,0 +1,16 @@
+2026-04-20 18:56:50,439 — Pipeline started
+2026-04-20 18:56:51,447 — Dataset loaded
+2026-04-20 18:56:51,505 — Removed missing CustomerID
+2026-04-20 18:56:51,558 — Removed negative quantities
+2026-04-20 18:56:51,708 — Converted InvoiceDate to datetime
+2026-04-20 18:56:51,710 — Revenue column created
+2026-04-20 18:56:54,505 — Cleaned data saved
+2026-04-20 18:56:54,505 — Pipeline finished successfully
+2026-04-20 18:57:13,707 — Pipeline started
+2026-04-20 18:57:14,626 — Dataset loaded
+2026-04-20 18:57:14,677 — Removed missing CustomerID
+2026-04-20 18:57:14,723 — Removed negative quantities
+2026-04-20 18:57:14,847 — Converted InvoiceDate to datetime
+2026-04-20 18:57:14,849 — Revenue column created
+2026-04-20 18:57:17,719 — Cleaned data saved
+2026-04-20 18:57:17,719 — Pipeline finished successfully
