@@ -14,3 +14,30 @@
 2026-04-20 18:57:14,849 — Revenue column created
 2026-04-20 18:57:17,719 — Cleaned data saved
 2026-04-20 18:57:17,719 — Pipeline finished successfully
+2026-05-14 08:27:01,276 — Pipeline started
+2026-05-14 08:27:03,593 — Dataset loaded
+2026-05-14 08:27:03,677 — Removed missing CustomerID
+2026-05-14 08:27:03,732 — Removed negative quantities
+2026-05-14 08:27:03,921 — Converted InvoiceDate to datetime
+2026-05-14 08:27:03,926 — Revenue column created
+2026-05-14 08:27:06,853 — Cleaned data saved
+2026-05-14 08:27:06,853 — Pipeline finished successfully
+2026-05-14 08:27:27,348 — Pipeline started
+2026-05-14 08:27:28,299 — Dataset loaded
+2026-05-14 08:27:28,355 — Removed missing CustomerID
+2026-05-14 08:27:28,405 — Removed negative quantities
+2026-05-14 08:27:28,534 — Converted InvoiceDate to datetime
+2026-05-14 08:27:28,537 — Revenue column created
+2026-05-14 08:27:31,484 — Cleaned data saved
+2026-05-14 08:27:31,484 — Pipeline finished successfully
+2026-05-14 08:29:21,965 — Pipeline started
+2026-05-14 08:29:22,993 — Dataset loaded
+2026-05-14 08:29:23,052 — Removed missing CustomerID
+2026-05-14 08:29:23,104 — Removed negative quantities
+2026-05-14 08:29:23,247 — Converted InvoiceDate to datetime
+2026-05-14 08:29:23,365 — Checked missing values
+2026-05-14 08:29:23,368 — Negative quantity rows: 0
+2026-05-14 08:29:23,371 — Invalid revenue rows: 40
+2026-05-14 08:29:23,371 — Revenue column created
+2026-05-14 08:29:26,556 — Cleaned data saved
+2026-05-14 08:29:26,556 — Pipeline finished successfully

@@ -30,6 +30,35 @@ sales["InvoiceDate"] = pd.to_datetime(sales["InvoiceDate"])
 logging.info("Converted InvoiceDate to datetime")
 
 sales["Revenue"] = sales["Quantity"] * sales["UnitPrice"]
+
+# ------------------------
+# DATA QUALITY CHECKS
+# ------------------------
+
+# Check for missing values
+missing_values = sales.isnull().sum()
+
+print("\nMissing values:")
+print(missing_values)
+
+logging.info("Checked missing values")
+
+# Validate quantities
+negative_quantities = sales[sales["Quantity"] <= 0]
+
+print("\nNegative quantity rows:")
+print(len(negative_quantities))
+
+logging.info(f"Negative quantity rows: {len(negative_quantities)}")
+
+# Validate revenue calculations
+invalid_revenue = sales[sales["Revenue"] <= 0]
+
+print("\nInvalid revenue rows:")
+print(len(invalid_revenue))
+
+logging.info(f"Invalid revenue rows: {len(invalid_revenue)}")
+
 logging.info("Revenue column created")
 
 # Step 3 — Save cleaned dataset
